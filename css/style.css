@@ -7,11 +7,19 @@ header{
 }
 .manutencao {
     text-align: center;
-}
+    height: 87vh;
+}/*
 .manutencao img{
+    max-width: 100%;
     height: 87vh;
     margin: 0 5%;
     align-items: center;
+}*/
+.imgManutencao{
+    background-image: url('/img/construcao.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .rodape{
     margin: 5px 0 0 0;
