@@ -48,11 +48,12 @@
                                     <a class="nav-link" href="#recrute">RECRUTE</a>
                                 </li>
                                 <li class="nav-item menuItem">
-                                    <a class="nav-link" href="#contato">CONTATO</a>
+                                    <a class="nav-link" href="#cursos">CURSOS</a>
                                 </li>
                                 <li class="nav-item menuItem">
-                                    <a class="nav-link" href="#home">INICIO</a>
+                                    <a class="nav-link" href="#contato">CONTATO</a>
                                 </li>
+
 
                                 <input class="botaoNav" type="button" value="CADASTRE-SE" onclick="rolar_para('#')">
 
@@ -77,8 +78,9 @@
         <div class="container-fluid chamada">
             <div class="conteudo">
                 <div class="row justify-content-md-center">
-                    <div class="col-md-10 title">
-                        <h3>Capacitamos e conectamos talentos transgêneros a empresas abertas a inovação e diversidade.</h3>
+                    <div class="col-md-10">
+                        <h3 class="title">Capacitamos e conectamos talentos transgêneros a empresas abertas a inovação e
+                            diversidade.</h3>
                     </div>
                 </div>
                 <div class="row justify-content-md-center conteudoChamada">
@@ -108,9 +110,10 @@
                             inserir novos talentos trangêneros no mercado de trabalho digital,
                             conectando empresas que são carentes de pessoas qualificadas e que desejam
                             incluir estas pessoas em sua empresa. </h5>-->
-                            <h5>Somos uma empresa inovadora preocupada em capacitar e
-                                inserir novos talentos trangêneros no mercado de trabalho digital,
-                                conectando empresas que preocupam-se com a diversidade organizacional a talentos transgêneros em busca de oportunidades. </h5>
+                        <h5>Somos uma empresa inovadora preocupada em capacitar e
+                            inserir novos talentos trangêneros no mercado de trabalho digital,
+                            conectando empresas que preocupam-se com a diversidade organizacional a talentos
+                            transgêneros em busca de oportunidades. </h5>
                         <input class="botaoChamada" type="button" value="QUERO CONTRATAR" onclick="rolar_para('#')">
                     </div>
                 </div>
@@ -229,7 +232,20 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuO
-    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function rolar_para(elemento) {
+            $('html, body').animate({
+                scrollTop: $(elemento).offset().top
+            }, 500);
+        }
+    </script>
+
+    <script>let toggle = true;</script>
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>
