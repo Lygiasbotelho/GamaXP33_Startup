@@ -1,0 +1,27 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 50px;
+}
+.manutencao {
+    text-align: center;
+}
+.manutencao img{
+    height: 87vh;
+    margin: 0 5%;
+    align-items: center;
+}
+
+.rodape p{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    height: 30px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
