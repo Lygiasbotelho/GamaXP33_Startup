@@ -15,6 +15,16 @@ html, body{
     border: none;
     color: #fff;
 }
+a{
+    text-decoration: none;
+}
+
+.title{
+    margin-bottom: 20px;
+    color: #ACABAB;
+    font-weight: 600;
+    text-align: center;
+}
 /*
 header{
     margin-bottom: 2px;
@@ -51,32 +61,34 @@ header{
    border-radius: 50px;
    width: 90%;
    color: #000;
+   font-weight: bold;
 }
 
 .menuItem a:hover {
     /*background-color: #F6CEEC;*/
    /* color: #FFF;
     box-shadow: 4px 6px 0 0 #751682;*/
-    color: #D8D8D8;
+    color: rgba(253, 152, 39, 0.74);/*#5B5CA4;/*#D8D8D8;*/
+   
 }
 .botaoNav{
     padding: 2px 10px;
     margin-left: 20px;
     height: 40px;
     border-radius: 8px;
-    background-color: #C4C4C4;
+    background-color: #D8D8D8;/*#C4C4C4;/*#F2F2F2;*/
     border: none;
     color: #000;
     font-weight: bold;
     width: 130px;
 }
 .botaoNav:hover {
-    /*background-color: #F6CEE3; color: #A901DB;*/
-    background-color: #F9DBAF;
-    color: #8E580C;
+    /*background-color: #F6CEE3#F9DBAF;; color: #A901DB;*/
+    background-color: #F2F2F2;/*#F6CEE3;*/
+    color: rgba(253, 152, 39, 0.74);/*#C54F83;/*#8E580C;*/
     font-weight: bold;
 }
-
+/*Seção chamada*/
 .chamada{
     height: auto;
     background: radial-gradient(189.51% 547.77% at 0% 3.78%, #2FB9D5 0%, rgba(239, 94, 171, 0.49) 45.03%, rgba(196, 196, 196, 0.3) 100%);
@@ -89,13 +101,15 @@ header{
     font-style: normal;
     font-weight: 600;
     font-size: 49px;
+    color: #fff;
 }
 .conteudoChamada{
-    margin: 30px 10px 10px;
+    padding: 10px 10px 0;
 }
 .txtChamada{
-    margin-top: 20px;
-    width: 312px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 290px;
 }
 .botaoChamada{
     background: #FD9827;
@@ -114,7 +128,6 @@ header{
 
 .botaoChamada:hover{
     background-color: #FAAC58;
-
 }
 .qrcodeChamada{
     width: 100px;
@@ -127,20 +140,99 @@ header{
     margin-bottom: 0;
 }
 
-
+/*Seção sobre*/
 .sobre{
     padding: 35px 0 50px;
     background-color: #F9F4F4;
     color: #ACABAB;
     text-align: center;
-}
-.sobre h2{
-    margin-bottom: 30px;
-    font-weight: 600;
+ 
 }
 .sobre h5{
-    margin-bottom: 30px;
+    padding-bottom: 20px;
 }
+/*.sobre h2{
+    margin-bottom: 30px;
+    font-weight: 600;
+}*/
+
+/*Seção cursos*/
+.cursos{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.cursos h2{
+    margin-bottom: 50px;
+}
+.cartao{
+    color: #1C1C1C;
+    box-sizing: border-box;
+    width:90%;
+    height: auto;
+    min-height: 350px;
+    margin-bottom: 40px;
+   /* margin-top: 30px;
+    margin-bottom: 50px;*/
+    border: none;
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cartao a{
+    color: #424242;
+}
+.cartao a:hover{
+    margin-bottom: -2px;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    color: #585858;
+    
+}
+
+
+.cartao h6{
+    font-weight: bold;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.cartao p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cartao .avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.cartao .detalhes{
+    display: flex; font-size: 14px;
+}
+
+.preco{
+    width: 50%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start; 
+}
+.vendidos{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end; 
+    text-align: right;
+}
+.vendidos i{
+    padding-right: 3px;
+    color: #ACABAB;;
+}
+.vendidos span{
+    text-align: right;
+    padding: 0 5px;
+}
+
 .rodape{
     margin: 5px 0 0 0;
 }
