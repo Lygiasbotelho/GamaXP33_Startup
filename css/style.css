@@ -1,8 +1,7 @@
 html, body{
-    color: #FAFAFA;
     padding: 0;
     margin: 0;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .navbar-toggler {
     color: rgba(255, 255, 255, 0.5)!important;
@@ -72,8 +71,9 @@ header{
     width: 130px;
 }
 .botaoNav:hover {
-    background-color: #F6CEE3;
-    color: #A901DB;
+    /*background-color: #F6CEE3; color: #A901DB;*/
+    background-color: #F9DBAF;
+    color: #8E580C;
     font-weight: bold;
 }
 
@@ -103,23 +103,44 @@ header{
     border-radius: 30px;
     border: none;
     color: #fff;
-    padding: 7px 20px;
+    padding: 7px 15px;
     margin-top: 20px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    width: 250px;
+    font-size: 16px;
+    width: 230px;
+}
+
+.botaoChamada:hover{
+    background-color: #FAAC58;
+
 }
 .qrcodeChamada{
     width: 100px;
 }
 .imgChamada{
+    height: 100%;
+}
+.imgChamada img{
     width: 100%;
     margin-bottom: 0;
 }
 
 
+.sobre{
+    padding: 35px 0 50px;
+    background-color: #F9F4F4;
+    color: #ACABAB;
+    text-align: center;
+}
+.sobre h2{
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.sobre h5{
+    margin-bottom: 30px;
+}
 .rodape{
     margin: 5px 0 0 0;
 }
