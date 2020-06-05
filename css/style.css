@@ -143,9 +143,9 @@ header{
    align-items: baseline;
 }*/
 .imgChamada{
-    height: 480px;
-  /* width: 350px;/*background: red;*/
-   /* margin-bottom: 0;*/vertical-align: baseline;
+    max-height: 480px;
+    max-width: 100%;
+    vertical-align: baseline;
 }
 
 /*Seção sobre*/
