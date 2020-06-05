@@ -5,7 +5,7 @@ function cadastroAlune()
 }
 function cadastroEmpresa()
 {
-    window.open("https://www.plural.host/cadastroEmpresa.html");
+    window.open("https://forms.gle/mMAKZAALQRMHuAhd6");
 }
 function logar()
 {
