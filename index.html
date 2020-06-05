@@ -22,6 +22,41 @@
 </head>
 
 <body>
+    <!--Modal de Inscrição com Sucesso-->
+
+  <div class="modal fade top" id="modalSucesso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true" data-backdrop="true">
+  <div class="modal-dialog modal-frame modal-top modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content ">
+
+      <!--Body-->
+      <div class="modal-body fundoModal">
+        <div class="row d-flex justify-content-center align-items-center">
+
+          <h4 class="modal-title">
+            <span class="badge">Mensagem enviada com sucesso!</span>
+
+          </h4>
+          <p class="pt-3 mx-5">Nossos consultores entrarão em contato em breve.<br>
+          </p>
+
+          <a type="button" class="btn waves-effec" data-dismiss="modal">
+            Ok, obrigado</a><!--
+          <p class="pt-3 mx-5">Obrigada pelo interesse <br> entraremos em contato em breve.<br>
+          </p>
+       <br>
+          <a type="button" class="btn waves-effec" data-dismiss="modal">
+            Ok, obrigado</a>-->
+
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!---->
+
     <header>
         <div class="container ">
             <div class="conteudo">
@@ -44,31 +79,21 @@
                                 <li class="nav-item menuItem">
                                     <a class="nav-link" href="#cursos">CURSOS</a>
                                 </li>
-                                <!--
+                                
                                 <li class="nav-item menuItem">
-                                    <a class="nav-link" href="#contato">CADASTRO ALUNO</a>
+                                    <a class="nav-link" href="#contato1">CONTATO</a>
                                 </li>
-                                <li class="nav-item menuItem">
-                                    <a class="nav-link" href="#contato">CADASTRO EMPRESA</a>
-                                </li>-->
                       
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzR0lGRrPDk-lpQ38pWE5ZQnpKAPOlx40Ls2bokIuao87U4w/viewform" target="_blanck"><input id="cadastro" class="botaoNav" type="button" value="NOVO ALUNO"></a> 
-                                <a href="#contato1"><input id="cadastro" class="botaoNav" type="button" value="PARA EMPRESAS"></a> 
-                                <a href="https://plural.glideapp.io/" target="_blank"><input id="logar" class="botaoNav" type="button" value="ENTRAR"> </a>
+                                <input id="cadastro" class="botaoNav" type="button" value="NOVO ALUNO" onclick="cadastroAlune()">
+                                <input id="cadastro" class="botaoNav" type="button" value="PARA EMPRESAS" onclick="cadastroEmpresa()">
+                                <input id="logar" class="botaoNav" type="button" value="ENTRAR" onclick="logar()">
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
-    <!--<section id="topo">
-        <div class="container">
-            <div class="row justify-content-md-center manutencao">
-                <div class="col-md-12 imgManutencao">
-                </div>
-            </div>
-        </div>
-    </section>-->
+    
     <section id="topo">
         <div class="container-fluid chamada">
             <div class="conteudo">
@@ -80,7 +105,7 @@
                 </div>
                 <div class="row justify-content-md-center">
                     <div class="col-md-5 esquerda">
-                        <input class="botaoChamada" type="button" value="QUERO RECRUTAR" onclick="rolar_para('#contato')">
+                        <input class="botaoChamada" type="button" value="QUERO RECRUTAR" onclick="cadastroEmpresa()">
                         <input class="botaoChamada" type="button" value="QUERO ME CAPACITAR" onclick="cadastroAlune()">
 
                         <h6 class="txtChamada"> É aluno e já se cadastrou?</h6>
@@ -114,7 +139,7 @@
                            <strong> Faça parte você também!</strong>
                         </h5>
 
-                        <a href="#contato"><input class="botaoChamada" type="button" value="QUERO SER PARCEIRO" onclick="rolar_para('#contato1')"></a>
+                        <input class="botaoChamada" type="button" value="QUERO SER PARCEIRO" onclick="cadastroEmpresa()">
                     </div>
                 </div>
             </div>
@@ -133,8 +158,8 @@
                             <a href="#">
                                 <img class="card-img-top" src="./img/c-logica.jpeg" alt="Lainne Guimarães">
                                 <div class="card-body">
-                                    <h6 class="card-title">Curso de Linguagem de programaçao</h6>
-                                    <p class="card-text"><img class="avatar" src="img/avatar.png">Por Fulano da Silva
+                                    <h6 class="card-title">Curso de Lógica de programaçao</h6>
+                                    <p class="card-text"><img class="avatar" src="img/andrea.jpg">Por Andrea Ominade
                                     </p>
                                     <hr />
                                     <div class="detalhes">
@@ -161,7 +186,7 @@
                                     alt="Gustavo Boese">
                                 <div class="card-body">
                                     <h6 class="card-title">Curso de Mídias Sociais para iniciantes</h6>
-                                    <p class="card-text"><img class="avatar" src="img/avatar.png">Por Fulano da Silva
+                                    <p class="card-text"><img class="avatar" src="img/rafael.jpg">Por Rafel Hundrão
                                     </p>
                                     <hr />
                                     <div class="detalhes">
@@ -187,7 +212,7 @@
                                 <img class="card-img-top" src="./img/c-design.jpeg" alt="Felipe Vedan">
                                 <div class="card-body">
                                     <h6 class="card-title">Curso de Web Design</h6>
-                                    <p class="card-text"><img class="avatar" src="img/avatar.png">Por Fulano da Silva
+                                    <p class="card-text"><img class="avatar" src="img/Michele.jpg">Por Michele Ferracioli
                                     </p>
                                     <hr />
                                     <div class="detalhes">
