@@ -3,12 +3,9 @@ html, body{
     margin: 0;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.navbar-toggler {
-    color: rgba(255, 255, 255, 0.5)!important;
-    border-color: rgba(255,255,255,1) !important;
-}
+
 .navbar-toggler-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(72,61,139, 0.3)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
 }
 
 .button {
@@ -27,12 +24,9 @@ a{
 }
 /*
 header{
-    margin-bottom: 2px;
+    background-color: #fff;/*#E5E5E5;*
 }*/
-.container-fluid{
-    margin:0;
-    padding: 0;
-}
+
 .conteudo{
     box-sizing: border-box;
     width: 80%;
@@ -46,47 +40,47 @@ header{
     margin-left: -15px;
 }
 .menu{
-    background-color: transparent;
     padding-left: 0;
     font-size: 14px;
-    align-items: right;
 }
 
 .menuItem a{
-   margin: 0 5px;
+   margin: 13px 5px;
    padding: 2px 20px;
    height: 40px;
    line-height: 30px;
    text-align: center;
-   border-radius: 50px;
-   width: 90%;
+   width: 90px;
    color: #3C3B3B;
    font-weight: bold;
 }
 
 .menuItem a:hover {
-    /*background-color: #F6CEEC;*/
-   /* color: #FFF;
-    box-shadow: 4px 6px 0 0 #751682;*/
-    color: #5B5CA4;/*rgba(253, 152, 39, 0.74);/*#5B5CA4;/*#D8D8D8;*/
-   
+    color: #5B5CA4;
 }
 .botaoNav{
-    padding: 2px 10px;
-    margin-left: 20px;
+   /* padding: 2px 10px;*/
+    margin-left: 15px;
+    margin-top: 10px;
     height: 40px;
     border-radius: 8px;
-    background-color: #F2F2F2;/*#D8D8D8;/*#C4C4C4;/*#F2F2F2;*/
+    background-color: #F2F2F2;
     border: none;
     color: #3C3B3B;
     font-weight: bold;
     width: 130px;
 }
 .botaoNav:hover {
-    /*background-color: #F6CEE3#F9DBAF;; color: #A901DB;*/
-    background-color: #FBEFFB;/*#F6CEE3;*/
-    color: #5B5B5F;/*#404148;/*#772B02;/*rgba(253, 152, 39, 0.74);/*#C54F83;/*#8E580C;*/
+    background-color: #FBEFFB;/*#BDBDBD;*/
+    color:#5B5B5F;
     font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+    .menuItem a, .botaoNav{
+        text-align: left;
+        align-items: right;
+        margin-left: 70%;
+    }
 }
 /*Seção chamada*/
 .chamada{
@@ -96,19 +90,25 @@ header{
 }
 .chamada .title{
     text-align: center;
-    padding:35px 10% 5px;
+    padding:45px 10% 5px;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     /*font-size: 49px;*/
     color: #fff;
-}
+}/*
 .conteudoChamada{
     padding: 10px 10px 0;
+    background-color: #FAAC58;
+    align-items: baseline;
+}*/
+.esquerda{
+    padding-top:5%;
+    margin: 0;
 }
 .txtChamada{
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 290px;
+    width: 310px;/*290px; /*background: red;*/
 }
 .botaoChamada{
     background: #FD9827;
@@ -119,7 +119,6 @@ header{
     padding: 7px 15px;
     margin-top: 20px;
     font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     width: 230px;
@@ -130,24 +129,29 @@ header{
 }
 .qrcodeChamada{
     width: 100px;
-    margin-bottom: 20px;
-}
+    margin-bottom: 30px;
+}/*
 .imgChamada{
-    height: 100%;
+    /*
+    display: flex;
+    justify-content: baseline;
+   align-items: baseline;*//*background: red;*
+   padding-bottom: 0;
+   margin-bottom: 0;
    align-items: baseline;
-}
-.imgChamada img{
-    width: 100%;
-    margin-bottom: 0;
+}*/
+.imgChamada{
+    height: 450px;
+  /* width: 350px;/*background: red;*/
+   /* margin-bottom: 0;*/vertical-align: baseline;
 }
 
 /*Seção sobre*/
 .sobre{
     padding: 35px 0 50px;
     background-color: #F9F4F4;
-    color: #ACABAB;
+    color: rgba(0, 0, 0, 0.46);/*#ACABAB;*/
     text-align: center;
- 
 }
 .sobre h5{
     padding: 30px 0 50px 0;
@@ -292,7 +296,7 @@ header{
     margin: 20px 0;
     font-family: Roboto;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     width: 170px;
     letter-spacing: 0.1em;
 }
@@ -303,20 +307,23 @@ header{
 }
 
 .rodape{
-    margin: 5px 0 0 0;
+    
+    text-align: right;
+    padding: 10px 10% 20px 0; 
 }
-.rodape p{
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
-    height: 30px;
-    padding-top: 5px;
-    box-sizing: border-box;
-    margin-bottom: 0;
-    padding-bottom: 0;
+.rodape a{
+    height: 80px;
 }
-
+.rodape img{
+    width: 40px;
+    margin-right: 10px;
+}
+.rodape img:hover{
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0),
+             0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid #fff;
+}
 /*
 .manutencao {
     text-align: center;
