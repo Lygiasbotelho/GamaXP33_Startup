@@ -220,6 +220,44 @@
 
         </div>
     </section>
+
+    <section id="contato">
+        <div class="container-fluid contato">
+            <div class="row justify-content-md-center">
+                <div class="col-md-6">
+                    <h2 class="title">Contato</h2>
+
+                    <form class="form" id="emailForm">
+                        <div class="form-group">
+                            <input name="name" type="text" class="form-control inputNome" placeholder="SEU NOME"
+                                oninvalid="this.setCustomValidity('Por favor, digite seu nome')"
+                                oninput="this.setCustomValidity('')" required>
+
+                            <input name="email" type="email" class="form-control" placeholder="SEU EMAIL"
+                                aria-label="seu melhor email" aria-describedby="inscrever"
+                                oninvalid="this.setCustomValidity('Por favor, coloque um email válido')"
+                                oninput="this.setCustomValidity('')" required>
+
+                            <input name="assunto" type="text" class="form-control" placeholder="ASSUNTO"
+                                oninvalid="this.setCustomValidity('Por favor, digite o assunto da mensagem')"
+                                oninput="this.setCustomValidity('')" required>
+                            
+                            <textarea name="mensagem" class="form-control" id="mensagem" rows="3"
+                                placeholder="MENSAGEM"
+                                oninvalid="this.setCustomValidity('Por favor, digite o assunto da mensagem')"
+                                oninput="this.setCustomValidity('')" required
+                            ></textarea>
+
+                            <button class="btn btn-light botaoContato" type="submit" id="inscrever">
+                                ENVIAR
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="rodape">
             <p>Todos os direitos reservados.</p>
