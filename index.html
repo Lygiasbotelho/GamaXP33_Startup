@@ -9,27 +9,25 @@
         content="Empresa voltada a inclusão de profissionais transgêneros no mercado de trabalho formal">
     <meta name="keywords" content="diverdidade, trans, transgenero, lgbt, curso, capacitacao, recolocacao, mercado" />
 
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <!--<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">-->
 
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container ">
             <div class="conteudo">
-
                 <nav class="navbar navbar-expand-lg menu">
                     <div class="container-fluid container-fluid-max">
-                        <a class="navbar-brand" href="#home">
-                            <img id="logo" src="img/logo.png"></a>
+                        <a class="navbar-brand" href="#home"><img id="logo" src="img/logo.png"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -38,14 +36,12 @@
 
                         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li class="nav-item menuItem">
-                                    <a class="nav-link" href="#home">INICIO</a>
-                                </li>
+
                                 <li class="nav-item menuItem">
                                     <a class="nav-link" href="#sobre">SOBRE</a>
                                 </li>
                                 <li class="nav-item menuItem">
-                                    <a class="nav-link" href="#recrute">RECRUTE</a>
+                                    <a class="nav-link" href="#contato">RECRUTE</a>
                                 </li>
                                 <li class="nav-item menuItem">
                                     <a class="nav-link" href="#cursos">CURSOS</a>
@@ -53,13 +49,10 @@
                                 <li class="nav-item menuItem">
                                     <a class="nav-link" href="#contato">CONTATO</a>
                                 </li>
-
-
-                                <input class="botaoNav" type="button" value="CADASTRE-SE" onclick="rolar_para('#')">
-
-
-                                <input class="botaoNav" type="button" value="ENTRAR" onclick="rolar_para('#')">
-
+                      
+                                <a href="#contato"><input id="cadastro" class="botaoNav" type="button" value="CADASTRE-SE"
+                                        onclick="rolar_para('#contato')"></a> 
+                                <a href="https://plural.glideapp.io/" target="_blank"><input id="logar" class="botaoNav" type="button" value="ENTRAR"> </a>
                         </div>
                     </div>
                 </nav>
@@ -83,18 +76,16 @@
                             diversidade.</h3>
                     </div>
                 </div>
-                <div class="row justify-content-md-center conteudoChamada">
-                    <div class="col-md-5">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-5 esquerda">
                         <input class="botaoChamada" type="button" value="QUERO CONTRATAR" onclick="rolar_para('#')">
-                        <input class="botaoChamada" type="button" value="QUERO UM EMPREGO" onclick="rolar_para('#')">
+                        <input class="botaoChamada" type="button" value="QUERO ME CAPACITAR" onclick="rolar_para('#')">
 
-                        <p class="txtChamada">Gostaria de se capacitar para que empresas incríveis te contratem ?
-                            <br>Baixe nosso APP apontando sua câmera do celular no QR Code.</p>
+                        <p class="txtChamada">Gostaria de se capacitar para que empresas incríveis te contratem?
+                            <br>Baixe nosso APP apontando sua câmera do celular para o QR Code.</p>
                         <img class="qrcodeChamada" src="img/qrcode 1.png">
                     </div>
-                    <div class="col-md-5 imgChamada">
-                        <img src="img/mão-com-celular 1.png">
-                    </div>
+                    <img class="imgChamada" src="img/mão-com-celular 1.png">
                 </div>
             </div>
 
@@ -114,7 +105,7 @@
                             inserir novos talentos trangêneros no mercado de trabalho digital,
                             conectando empresas que preocupam-se com a diversidade organizacional a talentos
                             transgêneros em busca de oportunidades. </h5>
-                        <input class="botaoChamada" type="button" value="QUERO CONTRATAR" onclick="rolar_para('#')">
+                        <input class="botaoChamada" type="button" value="QUERO CONTRATAR" onclick="rolar_para('#contato')">
                     </div>
                 </div>
             </div>
@@ -224,7 +215,7 @@
     <section id="contato">
         <div class="container-fluid contato">
             <div class="row justify-content-md-center">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <h2 class="title">Contato</h2>
 
                     <form class="form" id="emailForm">
@@ -241,12 +232,10 @@
                             <input name="assunto" type="text" class="form-control" placeholder="ASSUNTO"
                                 oninvalid="this.setCustomValidity('Por favor, digite o assunto da mensagem')"
                                 oninput="this.setCustomValidity('')" required>
-                            
-                            <textarea name="mensagem" class="form-control" id="mensagem" rows="3"
-                                placeholder="MENSAGEM"
+
+                            <textarea name="mensagem" class="form-control" id="mensagem" rows="3" placeholder="MENSAGEM"
                                 oninvalid="this.setCustomValidity('Por favor, digite a mensagem')"
-                                oninput="this.setCustomValidity('')" required
-                            ></textarea>
+                                oninput="this.setCustomValidity('')" required></textarea>
 
                             <button class="btn btn-light botaoContato" type="submit" id="inscrever">
                                 ENVIAR
@@ -260,20 +249,24 @@
     </section>
     <footer>
         <div class="rodape">
-            <p>Todos os direitos reservados.</p>
+            <a class="linkedin" href="#"><img src="img/linkedin 1.png"></a>
+            <a class="facebook" href="#"><img src="img/fb 1.png"></a>
         </div>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
+   
     <script>
         function rolar_para(elemento) {
             $('html, body').animate({
@@ -282,8 +275,9 @@
         }
     </script>
 
-    <script>let toggle = true;</script>
     <script src="scripts/script.js"></script>
+
+
 </body>
 
 </html>
